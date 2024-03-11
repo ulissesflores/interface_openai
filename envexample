@@ -1,0 +1,24 @@
+# .env
+# Este arquivo contém as configurações confidenciais e as chaves de API necessárias para executar a aplicação.
+# Copie este exemplo para um arquivo .env no diretório raiz do seu projeto e preencha os valores conforme necessário.
+
+# **SEÇÃO: OpenAI Secrets**
+
+# **Variável:** OPENAI_API_KEY
+# **Descrição:** A chave da API OpenAI que permite que a aplicação se autentique e utilize os serviços da OpenAI.
+# **Tipo:** String
+# **Padrão:** Nenhum
+# **Observações:**
+    # * É fundamental manter esta chave em segredo e não compartilhá-la com ninguém.
+    # * Você pode obter sua chave da API OpenAI criando uma conta gratuita em https://beta.openai.com/account/keys.
+    # * Consulte a documentação da OpenAI para obter mais informações sobre como usar a API: https://beta.openai.com/docs/api-reference/.
+
+# **Exemplos:**
+# OPENAI_API_KEY="sk-YOUR-API-KEY"
+#
+# O arquivo de configuração encontra-se dentro de app/utils/openia_config.py
+#
+# Defina a chave da API OpenAI
+OPENAI_API_KEY="sk-SUA_CHAVE_AQUI"
+
+

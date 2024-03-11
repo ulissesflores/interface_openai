@@ -1,0 +1,13 @@
+services:
+  app:
+    build:
+      context: .  # Diretório que contém o Dockerfile, '.' representa o diretório atual
+      dockerfile: Dockerfile  # Opcional se o seu Dockerfile estiver no diretório raiz e nomeado 'Dockerfile'
+    entrypoint:
+    - sleep
+    - infinity
+    init: true
+    volumes:
+    - type: bind
+      source: /var/run/docker.sock
+      target: /var/run/docker.sock
