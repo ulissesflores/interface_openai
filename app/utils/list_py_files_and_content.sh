@@ -2,7 +2,7 @@
 # Esse arquivo apenas faz uma listagem da estrutura do projeto e com a ajuda do arquivo filter_py_content.py tira os comentarios dos arquivos, 
 # gerando um arquivo de texto com todas essas informações.
 
-PROJECT_ROOT="~/codexhash/Docker/zap-openia-python"
+PROJECT_ROOT="~/codexhash/Docker/interface_openai"
 cd "$(eval echo ${PROJECT_ROOT})" || exit
 
 {

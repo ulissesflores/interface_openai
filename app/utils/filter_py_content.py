@@ -9,17 +9,17 @@ def main(file_path):
         new_lines = []
         inside_docstring = False
         for line in lines:
-            stripped_line = line.strip()
-            # Ignora linhas vazias e comentários
-            if not stripped_line or stripped_line.startswith("#"):
-                continue
+            # stripped_line = line.strip()
+            # # Ignora linhas vazias e comentários
+            # if not stripped_line or stripped_line.startswith("#"):
+            #     continue
 
-            # Checa por início ou fim de docstrings
-            if stripped_line.startswith('"""') or stripped_line.startswith("'''"):
-                inside_docstring = not inside_docstring
-                continue
+            # # Checa por início ou fim de docstrings
+            # if stripped_line.startswith('"""') or stripped_line.startswith("'''"):
+            #     inside_docstring = not inside_docstring
+            #     continue
 
-            if not inside_docstring:
+            # if not inside_docstring:
                 new_lines.append(line)
 
         # Exibe as linhas filtradas
